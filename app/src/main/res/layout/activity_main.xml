@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/master_layout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/master_layout"
+        android:text="Title"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"/>
+    <FrameLayout
+        android:id="@+id/scene_root"
+        android:layout_height="200dp"
+        android:layout_width="match_parent">
+
+    <include layout="@layout/a_scene"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="goToScene1"
+        android:text="Go to scene 1"/>
+    <Button
+        android:id="@+id/button1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:onClick="goToScene2"
+        android:text="Go to scene 2"/>
+
+    </LinearLayout>
